@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPUs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul, li, img, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 1rem 0 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        #gpus h2 {
+            text-align: center;
+            font-size: 2.5rem; /* Increased font size */
+            margin-bottom: 1.5rem;
+        }
+
+        #gpus h3 {
+            font-size: 2rem; /* Increased font size */
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        #gpus h4 {
+            font-size: 1.5rem; /* Increased font size */
+            margin: 0.5rem 0;
+            color: #555;
+        }
+
+        .gpu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Two items per row */
+            gap: 1.5rem;
+        }
+
+        .gpu-item {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gpu-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        .gpu-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 1.5rem; /* Increased font size */
+        }
+
+        .gpu-item p {
+            margin: 0;
+            font-size: 1rem; /* Adjust as needed */
+        }
+
+        .gpu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .add-to-cart {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .gpu-items {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gpu-items {
+                grid-template-columns: 1fr; /* Single column on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Parts</h1>
+        <nav>
+            <ul>
+                <li><a href="pc_parts.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="gpus">
+            <h2>GPUs</h2>
+            <!-- NVIDIA GPUs Section -->
+            <h3>NVIDIA GPUs</h3>
+            <h4>GeForce RTX 3000 Series</h4>
+            <div class="gpu-items">
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2020/09/Box-Open-2.jpg" alt="NVIDIA GeForce RTX 3090">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 3090</h3>
+                        <p>CUDA Cores: 10496 | Base Clock: 1.40 GHz | Boost Clock: 1.70 GHz | Memory: 24 GB GDDR6X</p>
+                        <button class="add-to-cart" data-name="NVIDIA GeForce RTX 3090" data-price="1499.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2020/09/Box-Open.jpg" alt="NVIDIA GeForce RTX 3080">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 3080</h3>
+                        <p>CUDA Cores: 8704 | Base Clock: 1.44 GHz | Boost Clock: 1.71 GHz | Memory: 10 GB GDDR6X</p>
+                        <button class="add-to-cart" data-name="NVIDIA GeForce RTX 3080" data-price="699.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2020/10/Box-Open.jpg" alt="NVIDIA GeForce RTX 3070">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 3070</h3>
+                        <p>CUDA Cores: 5888 | Base Clock: 1.50 GHz | Boost Clock: 1.73 GHz | Memory: 8 GB GDDR6</p>
+                        <button class="add-to-cart" data-name="NVIDIA GeForce RTX 3070" data-price="499.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <h4>GeForce RTX 4000 Series</h4>
+            <div class="gpu-items">
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2022/10/Box-Open-ISO.jpg" alt="NVIDIA GeForce RTX 4090">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 4090</h3>
+                        <p>CUDA Cores: 16384 | Base Clock: 1.85 GHz | Boost Clock: 2.52 GHz | Memory: 24 GB GDDR6X</p>
+                        <button class="add-to-cart" data-name="NVIDIA GeForce RTX 4090" data-price="1599.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2022/11/Box-Open.jpg" alt="NVIDIA GeForce RTX 4080">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 4080</h3>
+                        <p>CUDA Cores: 9728 | Base Clock: 2.21 GHz | Boost Clock: 2.51 GHz | Memory: 16 GB GDDR6X</p>
+                        <button class="add-to-cart" data-name="NVIDIA GeForce RTX 4080" data-price="1199.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2023/04/Box-Open.jpg" alt="NVIDIA GeForce RTX 4070">
+                    <div class="gpu-details">
+                        <h3>NVIDIA GeForce RTX 4070</h3>
+                        <p>CUDA Cores: 5888 | Base Clock: 1.92 GHz | Boost Clock: 2.48 GHz | Memory: 12 GB GDDR6X</p>
+                        <button class="add-to-cart" data-name="NVIDIA GeForce RTX 4070" data-price="699.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- AMD GPUs Section -->
+            <h3>AMD GPUs</h3>
+            <h4>Radeon RX 6000 Series</h4>
+            <div class="gpu-items">
+                <div class="gpu-item">
+                    <img src="https://s.alicdn.com/@sc04/kf/H4fa6770069e84326b0e22a9c635c86caV.jpg_720x720q50.jpg" alt="AMD Radeon RX 6900 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 6900 XT</h3>
+                        <p>Stream Processors: 5120 | Base Clock: 1.82 GHz | Boost Clock: 2.25 GHz | Memory: 16 GB GDDR6</p>
+                        <button class="add-to-cart" data-name="AMD Radeon RX 6900 XT" data-price="999.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gpu-item">
+                    <img src="https://www.guru3d.com/data/publish/220/35a68abcaf328a949946a048ab5ce5fe00030f/img_1386.jpg" alt="AMD Radeon RX 6800 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 6800 XT</h3>
+                        <p>Stream Processors: 4608 | Base Clock: 1.82 GHz | Boost Clock: 2.25 GHz | Memory: 16 GB GDDR6</p>
+                        <button class="add-to-cart" data-name="AMD Radeon RX 6800 XT" data-price="649.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2021/03/Intro-2.jpg" alt="AMD Radeon RX 6700 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 6700 XT</h3>
+                        <p>Stream Processors: 2560 | Base Clock: 2.32 GHz | Boost Clock: 2.58 GHz | Memory: 12 GB GDDR6</p>
+                        <button class="add-to-cart" data-name="AMD Radeon RX 6700 XT" data-price="479.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <h4>Radeon RX 7000 Series</h4>
+            <div class="gpu-items">
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2022/12/Box-Open.jpg" alt="AMD Radeon RX 7900 XTX">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 7900 XTX</h3>
+                        <p>Stream Processors: 6144 | Base Clock: 1.85 GHz | Boost Clock: 2.5 GHz | Memory: 24 GB GDDR6</p>
+                        <button class="add-to-cart" data-name="AMD Radeon RX 7900 XTX" data-price="1199.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gpu-item">
+                    <img src="https://www.techpowerup.com/review/amd-navi-31-radeon-rx-7900-xtx-and-xt-unboxing/images/xt-package3.jpg" alt="AMD Radeon RX 7900 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 7900 XT</h3>
+                        <p>Stream Processors: 5376 | Base Clock: 1.85 GHz | Boost Clock: 2.4 GHz | Memory: 20 GB GDDR6</p>
+                        <button class="add-to-cart" data-name="AMD Radeon RX 7900 XT" data-price="999.00">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="gpu-item">
+                    <img src="https://www.igorslab.de/wp-content/uploads/2023/09/Intro-980x678.jpg" alt="AMD Radeon RX 7800 XT">
+                    <div class="gpu-details">
+                        <h3>AMD Radeon RX 7800 XT</h3>
+                        <p>Stream Processors: 3840 | Base Clock: 1.5 GHz | Boost Clock: 2.39 GHz | Memory: 16 GB GDDR6</p>
+                        <button class="add-to-cart" data-name="AMD Radeon RX 7800 XT" data-price="649.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="checkout">Checkout</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 PC Parts. All rights reserved.</p>
+    </footer>
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const cartItemsList = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+
+            // Load cart from local storage
+            updateCart();
+
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+
+                    // Add item to cart
+                    cartItems.push({ name, price });
+                    updateCart();
+                });
+            });
+
+            document.getElementById('clear-cart').addEventListener('click', function() {
+                cartItems.length = 0; // Clear cart items
+                updateCart();
+            });
+
+            document.getElementById('checkout').addEventListener('click', function() {
+                // Placeholder for checkout process
+                alert('Checkout functionality is not implemented yet.');
+            });
+
+            function updateCart() {
+                // Save cart to local storage
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+                // Clear the list
+                cartItemsList.innerHTML = '';
+                let total = 0;
+
+                // Populate the cart items list
+                cartItems.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                    cartItemsList.appendChild(li);
+                    total += item.price;
+                });
+
+                // Update total
+                cartTotal.textContent = total.toFixed(2);
+            }
+        });
+    </script>
+</body>
+</html>

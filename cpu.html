@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPUs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset default browser styles */
+        body, h1, h2, h3, p, ul, li, img, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+        }
+
+        /* Main content styling */
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .cpu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid layout */
+            gap: 1.5rem;
+        }
+
+        .cpu-item {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cpu-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        .cpu-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 1.25rem;
+        }
+
+        .cpu-item p {
+            margin: 0;
+        }
+
+        .cpu-item button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .cpu-item button:hover {
+            background-color: #218838;
+        }
+
+        /* Footer styling */
+        footer {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* Shopping Cart Styling */
+        #cart {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            background: #fff;
+        }
+
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #cart-items li {
+            margin-bottom: 5px;
+        }
+
+        #clear-cart, #checkout {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #clear-cart:hover, #checkout:hover {
+            background-color: #0056b3;
+        }
+
+        #clear-cart {
+            background-color: #dc3545;
+        }
+
+        #clear-cart:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Parts</h1>
+        <nav>
+            <ul>
+                <li><a href="pc_parts.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="am4">
+            <h2>AM4 CPUs</h2>
+            <div class="cpu-items">
+                <div class="cpu-item">
+                    <img src="https://drr622wuctn26.cloudfront.net/image/cache/catalog/processor/amd/100-100000065box/100-100000065box-image-main-600x600.jpg" alt="AMD Ryzen 5 5600X">
+                    <h3>AMD Ryzen 5 5600X</h3>
+                    <p>6 Cores | Base Clock: 3.7 GHz | Boost Clock: 4.6 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 5 5600X" data-price="10.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://www.singular.com.cy/images/detailed/321/AMD_Ryzen_7_5800X_3.8_GHz_8-core_16_100-100000063WOF-800668.jpg" alt="AMD Ryzen 7 5800X">
+                    <h3>AMD Ryzen 7 5800X</h3>
+                    <p>8 Cores | Base Clock: 3.8 GHz | Boost Clock: 4.7 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 7 5800X" data-price="20.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-5900x.jpg" alt="AMD Ryzen 9 5900X">
+                    <h3>AMD Ryzen 9 5900X</h3>
+                    <p>12 Cores | Base Clock: 3.7 GHz | Boost Clock: 4.8 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 9 5900X" data-price="30.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://img.computerunivers.net/cp/images/400x400/201103065952000601900008L" alt="AMD Ryzen 9 5950X">
+                    <h3>AMD Ryzen 9 5950X</h3>
+                    <p>16 Cores | Base Clock: 3.4 GHz | Boost Clock: 4.9 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 9 5950X" data-price="40.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://img.computerunivers.net/cp/images/1000x1000/190708073341100601900002G" alt="AMD Ryzen 5 3600">
+                    <h3>AMD Ryzen 5 3600</h3>
+                    <p>6 Cores | Base Clock: 3.6 GHz | Boost Clock: 4.2 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 5 3600" data-price="15.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/51mYUHhRQdL._MCnd_AC_SR462,462_.jpg" alt="AMD Ryzen 7 3700X">
+                    <h3>AMD Ryzen 7 3700X</h3>
+                    <p>8 Cores | Base Clock: 3.6 GHz | Boost Clock: 4.4 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 7 3700X" data-price="25.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://m.media-amazon.com/images/I/7122uH4-hfL._AC_UF894,1000_QL80_.jpg" alt="AMD Ryzen 9 3950X">
+                    <h3>AMD Ryzen 9 3950X</h3>
+                    <p>16 Cores | Base Clock: 3.5 GHz | Boost Clock: 4.7 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 9 3950X" data-price="50.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="am5">
+            <h2>AM5 CPUs</h2>
+            <div class="cpu-items">
+                <div class="cpu-item">
+                    <img src="https://storage.googleapis.com/bionic_1626848719/products/22a258626debf50dd6bb8f7467f5838115a49b0d/banners/14800435_1686063336.jpg" alt="AMD Ryzen 7 7800X3D">
+                    <h3>AMD Ryzen 7 7800X3D</h3>
+                    <p>8 Cores | Base Clock: 4.0 GHz | Boost Clock: 5.0 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 7 7800X3D" data-price="60.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-7900x.jpg" alt="AMD Ryzen 9 7900X">
+                    <h3>AMD Ryzen 9 7900X</h3>
+                    <p>12 Cores | Base Clock: 4.7 GHz | Boost Clock: 5.6 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 9 7900X" data-price="70.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/2505503-ryzen-9-7900x.jpg" alt="AMD Ryzen 9 7950X">
+                    <h3>AMD Ryzen 9 7950X</h3>
+                    <p>16 Cores | Base Clock: 4.2 GHz | Boost Clock: 5.7 GHz</p>
+                    <button class="add-to-cart" data-name="AMD Ryzen 9 7950X" data-price="80.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="lga1700">
+            <h2>LGA 1700 CPUs</h2>
+            <div class="cpu-items">
+                <div class="cpu-item">
+                    <img src="https://dreamyshopcy.com/image/cache/catalog/dreamyshopcy/Store/All_Photos/product-20475-1000x1000.jpg" alt="Intel Core i5-12600K">
+                    <h3>Intel Core i5-12600K</h3>
+                    <p>10 Cores | Base Clock: 3.7 GHz | Boost Clock: 4.9 GHz</p>
+                    <button class="add-to-cart" data-name="Intel Core i5-12600K" data-price="40.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://img.computerunivers.net/cp/images/400x400/221005095516100501900063N" alt="Intel Core i7-13700K">
+                    <h3>Intel Core i7-13700K</h3>
+                    <p>16 Cores | Base Clock: 3.4 GHz | Boost Clock: 5.4 GHz</p>
+                    <button class="add-to-cart" data-name="Intel Core i7-13700K" data-price="60.00">Add to Cart</button>
+                </div>
+                <div class="cpu-item">
+                    <img src="https://dreamyshopcy.com/image/cache/catalog/dreamyshopcy/Store/All_Photos/product-20503-750x750.jpg" alt="Intel Core i9-13900K">
+                    <h3>Intel Core i9-13900K</h3>
+                    <p>24 Cores | Base Clock: 3.0 GHz | Boost Clock: 5.8 GHz</p>
+                    <button class="add-to-cart" data-name="Intel Core i9-13900K" data-price="90.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="checkout">Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PC Parts Store</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const cartItemsList = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+
+            // Load cart from local storage
+            updateCart();
+
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+
+                    // Add item to cart
+                    cartItems.push({ name, price });
+                    updateCart();
+                });
+            });
+
+            document.getElementById('clear-cart').addEventListener('click', function() {
+                cartItems.length = 0; // Clear cart items
+                updateCart();
+            });
+
+            document.getElementById('checkout').addEventListener('click', function() {
+                // Placeholder for checkout process
+                alert('Checkout functionality is not implemented yet.');
+            });
+
+            function updateCart() {
+                // Save cart to local storage
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+                // Clear the list
+                cartItemsList.innerHTML = '';
+                let total = 0;
+
+                // Populate the cart items list
+                cartItems.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                    cartItemsList.appendChild(li);
+                    total += item.price;
+                });
+
+                // Update total
+                cartTotal.textContent = total.toFixed(2);
+            }
+        });
+    </script>
+</body>
+</html>

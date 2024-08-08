@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooling Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p, ul, li, img, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #007BFF, #00C6FF);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 1rem 0 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cooling-category {
+            margin-bottom: 2rem;
+        }
+
+        .cooling-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+
+        .cooling-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33.333% - 1rem); /* 3 items per row */
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cooling-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        .cooling-item h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-size: 1.25rem;
+        }
+
+        .cooling-item p {
+            margin: 0;
+        }
+
+        .cooling-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+ .add-to-cart {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .cooling-item {
+                width: calc(50% - 1rem); /* 2 items per row */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cooling-item {
+                width: calc(100% - 1rem); /* 1 item per row */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Parts</h1>
+        <nav>
+            <ul>
+                <li><a href="pc_parts.html">Home</a></li>
+                <li><a href="#cooling">Cooling</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cooling">
+            <h2>Cooling Solutions</h2>
+            
+            <!-- Water Cooling -->
+            <div class="cooling-category">
+                <h2>Water Cooling</h2>
+                <div class="cooling-items">
+                    <div class="cooling-item">
+                        <img src="https://storage.googleapis.com/bionic_1626848719/products/f71d618ba97b6aa799284ffaeadc107eb7d83125/banners/12000733-1_1686065153.png" alt="Corsair H150i Elite Capellix">
+                        <h3>Corsair H150i Elite Capellix</h3>
+                        <p>Type: AIO | Radiator Size: 360mm | Fans: 3 x 120mm | Features: RGB Lighting</p>
+                        <button class="add-to-cart" data-name="Corsair H150i Elite Capellix" data-price="10.00">Add to Cart</button>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.datocms-assets.com/34299/1615585055-kraken-x73frontbnwith-fanpurple.png" alt="NZXT Kraken X73">
+                        <h3>NZXT Kraken X73</h3>
+                        <p>Type: AIO | Radiator Size: 360mm | Fans: 3 x 120mm | Features: RGB Lighting, Customizable</p>
+                         <button class="add-to-cart" data-name="NZXT Kraken X73" data-price="10.00">Add to Cart</button>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.igorslab.de/wp-content/uploads/2020/11/14-Teaser.jpg" alt="EK-AIO Elite 360 D-RGB">
+                        <h3>EK-AIO Elite 360 D-RGB</h3>
+                        <p>Type: AIO | Radiator Size: 360mm | Fans: 3 x 120mm | Features: RGB Lighting</p>
+                        <button class="add-to-cart" data-name=EK-AIO Elite 360 D-RGB" data-price="10.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Air Cooling -->
+            <div class="cooling-category">
+                <h2>Air Cooling</h2>
+                <div class="cooling-items">
+                    <div class="cooling-item">
+                        <img src="https://noctua.at/pub/media/catalog/product/cache/0cdbea399f8ed06da39b3854134f6934/n/h/nh_d15_chromax_black_1_4.jpg" alt="Noctua NH-D15">
+                        <h3>Noctua NH-D15</h3>
+                        <p>Type: Dual Tower | Fans: 2 x 140mm | Features: High Performance, Quiet</p>
+                         <button class="add-to-cart" data-name="Noctua NH-D15" data-price="10.00">Add to Cart</button>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.bequiet.com/volumes/pim/cooler/darkrock/darkrockpro4/3d/004.jpg" alt="Be Quiet! Dark Rock 4">
+                        <h3>Be Quiet! Dark Rock 4</h3>
+                        <p>Type: Single Tower | Fan: 135mm | Features: Silent Operation, High Performance</p>
+                         <button class="add-to-cart" data-name="Be Quiet! Dark Rock 4" data-price="10.00">Add to Cart</button>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.arctic.de/media/2e/10/6d/1585909747/Freezer_34_eSports_Grey_White_G00_(1).png" alt="Arctic Freezer 34">
+                        <h3>Arctic Freezer 34</h3>
+                        <p>Type: Single Tower | Fans: 2 x 120mm | Features: Efficient Cooling, Affordable</p>
+                         <button class="add-to-cart" data-name="Arctic Freezer 34" data-price="10.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Custom Loop -->
+            <div class="cooling-category">
+                <h2>Custom Loop</h2>
+                <div class="cooling-items">
+                    <div class="cooling-item">
+                        <img src="https://m.media-amazon.com/images/I/61iJIj4X5ML._AC_UF1000,1000_QL80_.jpg" alt="EK-Quantum Kinetic TBE 200 D5">
+                        <h3>EK-Quantum Kinetic TBE 200 D5</h3>
+                        <p>Type: Pump/Res Combo | Pump Type: D5 | Features: Customizable RGB</p>
+                         <button class="add-to-cart" data-name="EK-Quantum Kinetic TBE 200 D5" data-price="10.00">Add to Cart</button>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.xtremerigs.net/wp-content/uploads/2015/02/RRU-Summary-Lr-1.jpg" alt="Alphacool NexXxoS XT45">
+                        <h3>Alphacool NexXxoS XT45</h3>
+                        <p>Type: Radiator | Size: 360mm | Features: High Performance, Slim Design</p>
+                         <button class="add-to-cart" data-name="Alphacool NexXxoS XT45" data-price="10.00">Add to Cart</button>
+                    </div>
+                    <div class="cooling-item">
+                        <img src="https://www.ekwb.com/shop/media/wysiwyg/EK-Quantum_Vector_Xtreme_RTX_3080-3090_D-RGB_nickel_plexi_intext_1.jpg" alt="EK-Quantum Vector GPU Block">
+                        <h3>EK-Quantum Vector GPU Block</h3>
+                        <p>Type: GPU Block | Compatibility: Various GPUs | Features: High Efficiency, RGB Lighting</p>
+                         <button class="add-to-cart" data-name="EK-Quantum Vector GPU Block" data-price="10.00">Add to Cart</button>
+                    </div>
+                     <div class="cooling-item">
+                        <img src="https://www.ekwb.com/shop/media/wysiwyg/EK-Velocity-D-RGB---Nickel-_-Plexi---Art.jpg" alt="EK-Quantum Velocity D-RGB">
+                        <h3>EK-Quantum Velocity D-RGB</h3>
+                         <p>Type: CPU Block | Compatibility: Intel/AMD | Features: High Performance, RGB Lighting</p>
+                          <button class="add-to-cart" data-name="EK-Quantum Velocity D-RGB" data-price="10.00">Add to Cart</button>
+                        </div>
+        <!-- Tubing -->
+        <div class="cooling-item">
+            <img src="https://img.overclockers.co.uk/images/WC-ACE-EK/2bd7132c37b8263f37550e5ee25e2dbe.jpg">
+            <h3>Soft Tubing 16mm</h3>
+            <p>Type: Soft Tubing | Diameter: 16mm | Length: 1m | Color: Clear</p>
+             <button class="add-to-cart" data-name="Soft Tubing 16mm" data-price="10.00">Add to Cart</button>
+        </div>
+        <div class="cooling-item">
+            <img src="https://images.watercoolinguk.co.uk/images/product_images/large/27/bitspower-none-chamfer-brass-hard-tubing-12mm-ad-500mm-black-sparkl-wazu-857-72644-1.jpg" alt="Hard Tubing 12mm">
+            <h3>Hard Tubing 12mm</h3>
+            <p>Type: Hard Tubing | Diameter: 12mm | Length: 1m | Color: Black</p>
+             <button class="add-to-cart" data-name="Hard Tubing 12mm" data-price="10.00">Add to Cart</button>
+        </div>
+        
+        <!-- Coolant -->
+        <div class="cooling-item">
+            <img src="https://www.scan.co.uk/images/products/3012586-a.jpg" alt="EK-CryoFuel Solid Blood Red">
+            <h3>EK-CryoFuel Solid Blood Red</h3>
+            <p>Type: Premixed Coolant | Color: Blood Red | Volume: 1L</p>
+             <button class="add-to-cart" data-name="EK-CryoFuel Solid Blood Red" data-price="10.00">Add to Cart</button>
+        </div>
+        <div class="cooling-item">
+            <img src="https://m.media-amazon.com/images/I/41tFesELXyL._AC_UF1000,1000_QL80_.jpg" alt="Corsair XL5 Performance Coolant">
+            <h3>Corsair XL5 Performance Coolant</h3>
+            <p>Type: Premixed Coolant | Color: Blue | Volume: 1L</p>
+             <button class="add-to-cart" data-name="Corsair XL5 Performance Coolant" data-price="10.00">Add to Cart</button>
+        </div>
+        
+        <!-- Fittings -->
+        <div class="cooling-item">
+            <img src="https://www.ekwb.com/shop/media/catalog/product/cache/1/image/x800/17f82f742ffe127f42dca9de82fb58b1/e/k/ek-af-angled-90-nickel_800.jpg" alt="EK-AF Angled Fitting 90°">
+            <h3>EK-AF Angled Fitting 90°</h3>
+            <p>Type: Angled Fitting | Angle: 90° | Size: 12mm | Material: Nickel-Plated</p>
+             <button class="add-to-cart" data-name="EK-AF Angled Fitting 90°" data-price="10.00">Add to Cart</button>
+        </div>
+        <div class="cooling-item">
+            <img src="https://img.overclockers.co.uk/images/WC-012-CS/7cab2e62d6bd1fe2c61adeca6e2ba4c4.jpg" alt="Corsair Hydro X Series XF Hardline Fittings">
+            <h3>Corsair Hydro X Series XF Hardline Fittings</h3>
+            <p>Type: Hardline Fitting | Size: 12mm | Material: Brass | Color: Black</p>
+             <button class="add-to-cart" data-name="Corsair Hydro X Series XF Hardline Fittings" data-price="10.00">Add to Cart</button>
+        </div>
+    </div>
+</section>
+    <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="clear-cart">Clear Cart</button>
+            <button id="checkout">Checkout</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PC Parts Store</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const cartItemsList = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+
+            // Load cart from local storage
+            updateCart();
+
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const price = parseFloat(this.getAttribute('data-price'));
+
+                    // Add item to cart
+                    cartItems.push({ name, price });
+                    updateCart();
+                });
+            });
+
+            document.getElementById('clear-cart').addEventListener('click', function() {
+                cartItems.length = 0; // Clear cart items
+                updateCart();
+            });
+
+            document.getElementById('checkout').addEventListener('click', function() {
+                // Placeholder for checkout process
+                alert('Checkout functionality is not implemented yet.');
+            });
+
+            function updateCart() {
+                // Save cart to local storage
+                localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+                // Clear the list
+                cartItemsList.innerHTML = '';
+                let total = 0;
+
+                // Populate the cart items list
+                cartItems.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                    cartItemsList.appendChild(li);
+                    total += item.price;
+                });
+
+                // Update total
+                cartTotal.textContent = total.toFixed(2);
+            }
+        });
+    </script>
+</body>
+</html>

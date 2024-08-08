@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Us Build Your Pc</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark mode toggle -->
+    <button id="dark-mode-toggle" style="position: fixed; top: 10px; right: 10px; padding: 10px; border-radius: 5px; border: none; background-color: #007BFF; color: white; cursor: pointer;">
+        Toggle Dark Mode
+    </button>
+
+    <header>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="about-us.html">About Us</a>
+	    <a href="pc_parts.html">Pc Parts</a>
+        </nav>
+        <h1>Build Your Own PC</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Select Your Components</h2>
+            <form id="pc-build-form">
+                <!-- CPU -->
+                <div class="form-group">
+                    <label for="cpu">CPU:</label>
+                    <select id="cpu" name="cpu">
+                        <option value="">Select a CPU</option>
+                       
+                       <!-- AM5 CPUs -->
+<optgroup label="AM5 CPUs">
+    <!-- Ryzen 7000 Series -->
+    <optgroup label="Ryzen 7000 Series">
+        <option value="AMD Ryzen 9 7950X">AMD Ryzen 9 7950X (16C/32T, 80MB, 4.5GHz, 5.7GHz, 170W)</option>
+        <option value="AMD Ryzen 9 7900X">AMD Ryzen 9 7900X (12C/24T, 76MB, 4.7GHz, 5.6GHz, 170W)</option>
+        <option value="AMD Ryzen 9 7950X3D">AMD Ryzen 9 7950X3D (16C/32T, 80MB, 4.2GHz, 5.7GHz, 170W)</option>
+        <option value="AMD Ryzen 9 7900X3D">AMD Ryzen 9 7900X3D (12C/24T, 76MB, 4.4GHz, 5.6GHz, 170W)</option>
+        <option value="AMD Ryzen 7 7800X3D">AMD Ryzen 7 7800X3D (8C/16T, 40MB, 4.2GHz, 5.0GHz, 120W)</option>
+        <option value="AMD Ryzen 7 7700X">AMD Ryzen 7 7700X (8C/16T, 40MB, 4.5GHz, 5.4GHz, 105W)</option>
+        <option value="AMD Ryzen 7 7700">AMD Ryzen 7 7700 (8C/16T, 40MB, 3.8GHz, 5.3GHz, 65W)</option>
+        <option value="AMD Ryzen 5 7600X">AMD Ryzen 5 7600X (6C/12T, 38MB, 4.7GHz, 5.3GHz, 105W)</option>
+        <option value="AMD Ryzen 5 7600">AMD Ryzen 5 7600 (6C/12T, 38MB, 3.8GHz, 5.1GHz, 65W)</option>
+        <option value="AMD Ryzen 5 7600G">AMD Ryzen 5 7600G (6C/12T, 38MB, 4.2GHz, 5.0GHz, 65W)</option>
+        <option value="AMD Ryzen 5 7600U">AMD Ryzen 5 7600U (6C/12T, 38MB, 3.3GHz, 4.9GHz, 35W)</option>
+        <option value="AMD Ryzen 5 7500F">AMD Ryzen 5 7500F (6C/12T, 38MB, 3.7GHz, 5.0GHz, 65W)</option>
+        <option value="AMD Ryzen 7 7800U">AMD Ryzen 7 7800U (8C/16T, 40MB, 3.9GHz, 5.1GHz, 35W)</option>
+        <option value="AMD Ryzen 9 7950X3D (35W)">AMD Ryzen 9 7950X3D (16C/32T, 80MB, 4.2GHz, 5.7GHz, 35W)</option>
+    </optgroup>
+</optgroup>
+
+                      <!-- LGA 1700 CPUs -->
+<optgroup label="LGA 1700 CPUs">
+    <!-- Core i9 Series -->
+    <optgroup label="Core i9 Series">
+        <option value="Intel Core i9-13900K">Intel Core i9-13900K (24C/32T, 36MB, 3.0GHz, 5.8GHz, 125W)</option>
+        <option value="Intel Core i9-13900KF">Intel Core i9-13900KF (24C/32T, 36MB, 3.0GHz, 5.8GHz, 125W)</option>
+        <option value="Intel Core i9-13900T">Intel Core i9-13900T (24C/32T, 36MB, 1.1GHz, 5.4GHz, 35W)</option>
+        <option value="Intel Core i9-12900K">Intel Core i9-12900K (16C/24T, 30MB, 3.2GHz, 5.2GHz, 125W)</option>
+        <option value="Intel Core i9-12900KF">Intel Core i9-12900KF (16C/24T, 30MB, 3.2GHz, 5.2GHz, 125W)</option>
+        <option value="Intel Core i9-12900T">Intel Core i9-12900T (16C/24T, 30MB, 1.3GHz, 4.9GHz, 35W)</option>
+    </optgroup>
+
+    <!-- Core i7 Series -->
+    <optgroup label="Core i7 Series">
+        <option value="Intel Core i7-13700K">Intel Core i7-13700K (16C/24T, 30MB, 3.4GHz, 5.4GHz, 125W)</option>
+        <option value="Intel Core i7-13700KF">Intel Core i7-13700KF (16C/24T, 30MB, 3.4GHz, 5.4GHz, 125W)</option>
+        <option value="Intel Core i7-13700T">Intel Core i7-13700T (16C/24T, 30MB, 1.4GHz, 5.0GHz, 35W)</option>
+        <option value="Intel Core i7-12700K">Intel Core i7-12700K (12C/20T, 25MB, 3.6GHz, 5.0GHz, 125W)</option>
+        <option value="Intel Core i7-12700KF">Intel Core i7-12700KF (12C/20T, 25MB, 3.6GHz, 5.0GHz, 125W)</option>
+        <option value="Intel Core i7-12700T">Intel Core i7-12700T (12C/20T, 25MB, 1.4GHz, 4.9GHz, 35W)</option>
+    </optgroup>
+
+    <!-- Core i5 Series -->
+    <optgroup label="Core i5 Series">
+        <option value="Intel Core i5-13600K">Intel Core i5-13600K (14C/20T, 24MB, 3.5GHz, 5.1GHz, 125W)</option>
+        <option value="Intel Core i5-13600KF">Intel Core i5-13600KF (14C/20T, 24MB, 3.5GHz, 5.1GHz, 125W)</option>
+        <option value="Intel Core i5-13600T">Intel Core i5-13600T (14C/20T, 24MB, 1.4GHz, 4.9GHz, 35W)</option>
+        <option value="Intel Core i5-12600K">Intel Core i5-12600K (10C/16T, 20MB, 3.7GHz, 4.9GHz, 125W)</option>
+        <option value="Intel Core i5-12600KF">Intel Core i5-12600KF (10C/16T, 20MB, 3.7GHz, 4.9GHz, 125W)</option>
+        <option value="Intel Core i5-12600T">Intel Core i5-12600T (10C/16T, 20MB, 1.4GHz, 4.6GHz, 35W)</option>
+    </optgroup>
+
+    <!-- Core i3 Series -->
+    <optgroup label="Core i3 Series">
+        <option value="Intel Core i3-13100">Intel Core i3-13100 (4C/8T, 12MB, 3.4GHz, 4.5GHz, 60W)</option>
+        <option value="Intel Core i3-13100F">Intel Core i3-13100F (4C/8T, 12MB, 3.4GHz, 4.5GHz, 60W)</option>
+        <option value="Intel Core i3-12100">Intel Core i3-12100 (4C/8T, 12MB, 3.3GHz, 4.3GHz, 60W)</option>
+        <option value="Intel Core i3-12100F">Intel Core i3-12100F (4C/8T, 12MB, 3.3GHz, 4.3GHz, 60W)</option>
+    </optgroup>
+
+    <!-- Pentium and Celeron Series -->
+    <optgroup label="Pentium and Celeron Series">
+        <option value="Intel Pentium Gold G7400">Intel Pentium Gold G7400 (2C/4T, 10MB, 3.7GHz, 3.7GHz, 46W)</option>
+        <option value="Intel Pentium Gold G7400T">Intel Pentium Gold G7400T (2C/4T, 10MB, 3.1GHz, 3.1GHz, 35W)</option>
+        <option value="Intel Celeron G6900">Intel Celeron G6900 (2C/2T, 4MB, 3.4GHz, 3.4GHz, 46W)</option>
+        <option value="Intel Celeron G6900T">Intel Celeron G6900T (2C/2T, 4MB, 3.0GHz, 3.0GHz, 35W)</option>
+    </optgroup>
+</optgroup>
+
+                    </select>
+                </div>
+
+                <!-- GPU -->
+                <div class="form-group">
+                    <label for="gpu">GPU:</label>
+                    <select id="gpu" name="gpu">
+                        <option value="">Select a GPU</option>
+                        <!-- Add GPU options here -->
+						<!-- AMD 6000 Series GPUs -->
+                        <optgroup label="AMD 6000 Series">
+                            <option value="AMD Radeon RX 6600">AMD Radeon RX 6600 (132W)</option>
+                            <option value="AMD Radeon RX 6600 XT">AMD Radeon RX 6600 XT (160W)</option>
+                            <option value="AMD Radeon RX 6650 XT">AMD Radeon RX 6650 XT (180W)</option>
+                            <option value="AMD Radeon RX 6700 XT">AMD Radeon RX 6700 XT (230W)</option>
+                            <option value="AMD Radeon RX 6750 XT">AMD Radeon RX 6750 XT (250W)</option>
+                            <option value="AMD Radeon RX 6800">AMD Radeon RX 6800 (250W)</option>
+                            <option value="AMD Radeon RX 6800 XT">AMD Radeon RX 6800 XT (300W)</option>
+                            <option value="AMD Radeon RX 6900 XT">AMD Radeon RX 6900 XT (300W)</option>
+                            <option value="AMD Radeon RX 6950 XT">AMD Radeon RX 6950 XT (335W)</option>
+                        </optgroup>
+
+                        <!-- AMD 7000 Series GPUs -->
+                        <optgroup label="AMD 7000 Series">
+                            <option value="AMD Radeon RX 7600">AMD Radeon RX 7600 (165W)</option>
+                            <option value="AMD Radeon RX 7700 XT">AMD Radeon RX 7700 XT (245W)</option>
+                            <option value="AMD Radeon RX 7800 XT">AMD Radeon RX 7800 XT (263W)</option>
+                            <option value="AMD Radeon RX 7900 XT">AMD Radeon RX 7900 XT (315W)</option>
+                            <option value="AMD Radeon RX 7900 XTX">AMD Radeon RX 7900 XTX (355W)</option>
+                            <option value="AMD Radeon RX 7900 GRE">AMD Radeon RX 7900 GRE (330W)</option>
+                        </optgroup>
+
+                        <!-- NVIDIA 4000 Series GPUs -->
+                        <optgroup label="NVIDIA 4000 Series">
+                            <option value="NVIDIA GeForce RTX 4060">NVIDIA GeForce RTX 4060 (115W)</option>
+                            <option value="NVIDIA GeForce RTX 4060 Ti">NVIDIA GeForce RTX 4060 Ti (160W)</option>
+                            <option value="NVIDIA GeForce RTX 4070">NVIDIA GeForce RTX 4070 (200W)</option>
+                            <option value="NVIDIA GeForce RTX 4070 Ti">NVIDIA GeForce RTX 4070 Ti (285W)</option>
+                            <option value="NVIDIA GeForce RTX 4080">NVIDIA GeForce RTX 4080 (320W)</option>
+                            <option value="NVIDIA GeForce RTX 4090">NVIDIA GeForce RTX 4090 (450W)</option>
+                        </optgroup>
+						
+						<!-- NVIDIA 3000 Series GPUs -->
+						<optgroup label="NVIDIA 3000 Series">
+							<option value="NVIDIA GeForce RTX 3060">NVIDIA GeForce RTX 3060 (170W)</option>
+							<option value="NVIDIA GeForce RTX 3060 Ti">NVIDIA GeForce RTX 3060 Ti (200W)</option>
+							<option value="NVIDIA GeForce RTX 3070">NVIDIA GeForce RTX 3070 (220W)</option>
+							<option value="NVIDIA GeForce RTX 3070 Ti">NVIDIA GeForce RTX 3070 Ti (290W)</option>
+							<option value="NVIDIA GeForce RTX 3080">NVIDIA GeForce RTX 3080 (320W)</option>
+							<option value="NVIDIA GeForce RTX 3080 Ti">NVIDIA GeForce RTX 3080 Ti (350W)</option>
+							<option value="NVIDIA GeForce RTX 3090">NVIDIA GeForce RTX 3090 (350W)</option>
+						</optgroup>
+                    </select>
+                </div>
+
+                
+<div class="form-group">
+    <label for="ram">RAM:</label>
+    <select id="ram" name="ram">
+        <option value="">Select RAM</option>
+        <!-- Existing RAM options -->
+        <option value="corsair_vengeance_5600">Corsair Vengeance DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+        <option value="corsair_dominator_platinum_6400">Corsair Dominator Platinum DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="gskill_ripjaws_s5_6000">G.Skill Ripjaws S5 DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="gskill_trident_z5_6400">G.Skill Trident Z5 DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="kingston_fury_beast_5600">Kingston Fury Beast DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+        <option value="kingston_fury_renegade_6400">Kingston Fury Renegade DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="crucial_ballistix_5600">Crucial Ballistix DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="crucial_xlr8_6400">Crucial XLR8 DDR5 6400 MHz - CAS 38 - 32 GB (2 x 16 GB)</option>
+        <option value="adata_xpg_lancer_6000">ADATA XPG Lancer DDR5 6000 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+        <option value="adata_xpg_spectrix_d45g_6400">ADATA XPG Spectrix D45G DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="hyperx_fury_5600">HyperX Fury DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="hyperx_predator_6400">HyperX Predator DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="team_t_force_delta_6000">Team T-Force Delta DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="team_t_force_xtreem_6400">Team T-Force Xtreem DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="zotac_gaming_5600">Zotac Gaming DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="zotac_arctic_6000">Zotac Arctic DDR5 6000 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="msi_spatium_6400">MSI Spatium DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="asus_rog_strix_5600">ASUS ROG Strix DDR5 5600 MHz - CAS 40 - 16 GB (2 x 8 GB)</option>
+        <option value="gigabyte_aorus_5600">Gigabyte AORUS DDR5 5600 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+        <option value="biostar_racing_6400">Biostar Racing DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="patriot_viper_6400">Patriot Viper DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="xpg_d60g_6000">XPG D60G DDR5 6000 MHz - CAS 36 - 16 GB (2 x 8 GB)</option>
+
+        <!-- New RAM options -->
+        <option value="corsair_vengeance_7200">Corsair Vengeance DDR5 7200 MHz - CAS 34 - 32 GB (2 x 16 GB)</option>
+        <option value="corsair_dominator_platinum_7000">Corsair Dominator Platinum DDR5 7000 MHz - CAS 36 - 64 GB (2 x 32 GB)</option>
+        <option value="gskill_ripjaws_s5_6800">G.Skill Ripjaws S5 DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="gskill_trident_z5_rgb_7000">G.Skill Trident Z5 RGB DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="kingston_fury_beast_rgb_6400">Kingston Fury Beast RGB DDR5 6400 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="kingston_fury_renegade_rgb_7200">Kingston Fury Renegade RGB DDR5 7200 MHz - CAS 38 - 64 GB (2 x 32 GB)</option>
+        <option value="crucial_ballistix_max_6800">Crucial Ballistix MAX DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="crucial_xlr8_gaming_7000">Crucial XLR8 Gaming DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="adata_xpg_lancer_7200">ADATA XPG Lancer DDR5 7200 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="adata_xpg_spectrix_d50_7000">ADATA XPG Spectrix D50 DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="hyperx_fury_6800">HyperX Fury DDR5 6800 MHz - CAS 38 - 32 GB (2 x 16 GB)</option>
+        <option value="hyperx_predator_rgb_7200">HyperX Predator RGB DDR5 7200 MHz - CAS 36 - 64 GB (2 x 32 GB)</option>
+        <option value="team_t_force_delta_rgb_6800">Team T-Force Delta RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="team_t_force_xtreem_rgb_7200">Team T-Force Xtreem RGB DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="zotac_gaming_6800">Zotac Gaming DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="zotac_arctic_rgb_7000">Zotac Arctic RGB DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="msi_spatium_6800">MSI Spatium DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="msi_spatium_rgb_7200">MSI Spatium RGB DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="asus_rog_strix_rgb_6800">ASUS ROG Strix RGB DDR5 6800 MHz - CAS 38 - 32 GB (2 x 16 GB)</option>
+        <option value="asus_tuf_gaming_rgb_7000">ASUS TUF Gaming RGB DDR5 7000 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="gigabyte_aorus_rgb_6800">Gigabyte AORUS RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="gigabyte_aorus_elite_7200">Gigabyte AORUS Elite DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="biostar_racing_rgb_6800">Biostar Racing RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="biostar_valkyrie_7200">Biostar Valkyrie DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="patriot_viper_rgb_6800">Patriot Viper RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="patriot_viper_elite_7200">Patriot Viper Elite DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="xpg_d60g_rgb_6800">XPG D60G RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="xpg_gammix_d30_7200">XPG Gammix D30 DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+
+        <!-- Add more options to reach a total of 100 new options -->
+        <!-- Additional Brands -->
+        <option value="pny_xlr8_gaming_rgb_6800">PNY XLR8 Gaming RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="pny_xlr8_gaming_7200">PNY XLR8 Gaming DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="silicon_power_zenith_rgb_6800">Silicon Power Zenith RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="silicon_power_zenith_7200">Silicon Power Zenith DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="viper_venom_rgb_6800">Viper Venom RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="viper_venom_7200">Viper Venom DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="thermaltake_toughram_rgb_6800">Thermaltake Toughram RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="thermaltake_toughram_7200">Thermaltake Toughram DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+        <option value="lexar_hades_rgb_6800">Lexar Hades RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="lexar_hades_7200">Lexar Hades DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>  
+	<option value="vengeance_lp_rgb_6800">Vengeance LP RGB DDR5 6800 MHz - CAS 36 - 32 GB (2 x 16 GB)</option>
+        <option value="vengeance_lp_7200">Vengeance LP DDR5 7200 MHz - CAS 34 - 64 GB (2 x 32 GB)</option>
+	  <option value="teamgroup_t_create_expert_6000mhz_32gb">TeamGroup T-Create Expert DDR5 6000 MHz - CAS 30 - 32 GB (2 x 16 GB)</option>
+    </select>
+</div>
+               <!-- Motherboard -->
+<div class="form-group">
+    <label for="motherboard">Motherboard:</label>
+    <select id="motherboard" name="motherboard">
+        <option value="">Select Motherboard</option>
+        <!-- AM5 Motherboards with DDR5 Support -->
+	<option value="Gigabyte B650 UD AC" dara-socket="AM5"">Gigabyte B650 UD AC</option> 
+        <option value="ASUS ROG Strix X670E-E" data-socket="AM5">ASUS ROG Strix X670E-E</option>
+        <option value="MSI MAG B650 TOMAHAWK" data-socket="AM5">MSI MAG B650 TOMAHAWK</option>
+        <option value="Gigabyte X670 AORUS MASTER" data-socket="AM5">Gigabyte X670 AORUS MASTER</option>
+        <option value="ASRock X670E Taichi" data-socket="AM5">ASRock X670E Taichi</option>
+        <option value="ASUS TUF Gaming B650-PLUS" data-socket="AM5">ASUS TUF Gaming B650-PLUS</option>
+        <!-- LGA 1700 Motherboards with DDR5 Support -->
+        <option value="ASUS ROG Strix Z790-E" data-socket="LGA 1700">ASUS ROG Strix Z790-E</option>
+        <option value="MSI MPG Z690 Carbon WiFi" data-socket="LGA 1700">MSI MPG Z690 Carbon WiFi</option>
+        <option value="Gigabyte Z690 AORUS Elite" data-socket="LGA 1700">Gigabyte Z690 AORUS Elite</option>
+        <option value="ASRock Z690 Taichi" data-socket="LGA 1700">ASRock Z690 Taichi</option>
+        <option value="ASUS Prime Z690-A" data-socket="LGA 1700">ASUS Prime Z690-A</option>
+        <option value="MSI MPG Z790 Carbon WiFi" data-socket="LGA 1700">MSI MPG Z790 Carbon WiFi</option>
+        <option value="Gigabyte Z790 AORUS Master" data-socket="LGA 1700">Gigabyte Z790 AORUS Master</option>
+    </select>
+</div>
+
+
+                <!-- Storage Devices Dropdown -->
+                <div class="form-group">
+                    <label for="storage">Select Storage Device:</label>
+                    <select id="storage" name="storage" aria-label="Select Storage Device">
+                        <option value="" selected disabled>Select Storage Device</option>
+                        <!-- Add Storage options here -->
+						  <!-- NVMe SSDs -->
+    <optgroup label="NVMe SSDs">
+      <option value="TeamGroup MP44 Graphene">TeamGroup MP44 Graphene - 1TB, PCIe Gen4</option> 
+      <option value="Samsung 970 Evo Plus NVMe">Samsung 970 Evo Plus - 1TB, PCIe Gen 3</option>
+      <option value="Samsung 980 Pro NVMe">Samsung 980 Pro - 1TB, PCIe Gen 4</option>
+      <option value="Western Digital Black SN850">Western Digital Black SN850 - 1TB, PCIe Gen 4</option>
+      <option value="Kingston KC3000 NVMe">Kingston KC3000 - 1TB, PCIe Gen 4</option>
+      <option value="Crucial P5 Plus NVMe">Crucial P5 Plus - 1TB, PCIe Gen 4</option>
+    </optgroup>
+
+    <!-- SATA SSDs -->
+    <optgroup label="SATA SSDs">
+      <option value="Samsung 870 Evo SATA">Samsung 870 Evo - 1TB</option>
+      <option value="Crucial MX500 SATA">Crucial MX500 - 1TB</option>
+      <option value="Western Digital Blue 3D NAND SATA">Western Digital Blue 3D NAND - 1TB</option>
+      <option value="Kingston A400 SATA">Kingston A400 - 960GB</option>
+    </optgroup>
+
+    <!-- HDDs -->
+    <optgroup label="HDDs">
+      <option value="Western Digital Black HDD">Western Digital Black - 2TB, 7200 RPM</option>
+      <option value="Seagate Barracuda HDD">Seagate Barracuda - 2TB, 7200 RPM</option>
+      <option value="Toshiba X300 HDD">Toshiba X300 - 4TB, 7200 RPM</option>
+      <option value="Seagate IronWolf NAS HDD">Seagate IronWolf NAS - 6TB, 7200 RPM</option>
+    </optgroup>
+                    </select>
+                </div>
+
+                <!-- Coolers Dropdown -->
+                <div class="form-group">
+                    <label for="cooler">Select Cooler:</label>
+                    <select id="cooler" name="cooler" aria-label="Select Cooler">
+                        <option value="" selected disabled>Select Cooler</option>
+                        <!-- Add Cooler options here -->
+						  <!-- Air Coolers -->
+    <optgroup label="Air Coolers">
+      <option value="Noctua NH-D15">Noctua NH-D15 - Dual Tower, 140mm Fans</option>
+      <option value="Cooler Master Hyper 212 RGB">Cooler Master Hyper 212 RGB - Single Tower, 120mm Fan</option>
+      <option value="Be Quiet! Dark Rock Pro 4">Be Quiet! Dark Rock Pro 4 - Dual Tower, 135mm Fan</option>
+      <option value="Cryorig R1 Ultimate">Cryorig R1 Ultimate - Dual Tower, 140mm Fans</option>
+      <option value="Thermalright Macho Rev.B">Thermalright Macho Rev.B - Single Tower, 140mm Fan</option>
+      <option value="Scythe Fuma 3">Scythe Fuma 3 - Dual Tower, 120mm Fans</option>
+    </optgroup>
+
+    <!-- Water Coolers -->
+    <optgroup label="Water Coolers">
+      <option value="Corsair iCUE H150i Elite Capellix">Corsair iCUE H150i Elite Capellix - 360mm Radiator, RGB</option>
+      <option value="NZXT Kraken Z73">NZXT Kraken Z73 - 360mm Radiator, RGB, LCD Display</option>
+      <option value="Arctic Liquid Freezer II 360">Arctic Liquid Freezer II 360 - 360mm Radiator, Integrated VRM Fan</option>
+      <option value="EVGA CLC 280">EVGA CLC 280 - 280mm Radiator, RGB</option>
+      <option value="Thermaltake Floe Riing RGB 360 TT">Thermaltake Floe Riing RGB 360 TT - 360mm Radiator, RGB</option>
+      <option value="Deepcool Castle 360EX">Deepcool Castle 360EX - 360mm Radiator, RGB</option>
+    </optgroup>
+
+    <!-- Custom Loop Solutions -->
+    <optgroup label="Custom Loop Solutions">
+      <option value="EKWB Custom Loop Kit S360">EKWB Custom Loop Kit S360 - Complete Kit with 360mm Radiator</option>
+      <option value="Corsair Hydro X Series">Corsair Hydro X Series - Custom Loop Components</option>
+      <option value="Thermaltake Pacific C360 DDC">Thermaltake Pacific C360 DDC - Hard Tube Water Cooling Kit</option>
+      <option value="Alphacool Eisbaer Extreme">Alphacool Eisbaer Extreme - Customizable Loop System</option>
+    </optgroup>
+                    </select>
+                </div>
+
+                <!-- PSU -->
+                <div class="form-group">
+                    <label for="psu">Power Supply Unit (PSU):</label>
+                    <select id="psu" name="psu" aria-label="Select PSU">
+                        <option value="" disabled selected>Select PSU</option>
+                        <!-- Add PSU options here -->
+						  <option value="Corsair RM750x">Corsair RM750x - 750W, 80+ Gold, Fully Modular</option>
+    <option value="Corsair RM850x">Corsair RM850x - 850W, 80+ Gold, Fully Modular</option>
+    <option value="Corsair HX1000">Corsair HX1000 - 1000W, 80+ Platinum, Fully Modular</option>
+    <option value="Corsair SF750">Corsair SF750 - 750W, 80+ Platinum, SFX, Fully Modular</option>
+    <option value="EVGA SuperNOVA 850 G3">EVGA SuperNOVA 850 G3 - 850W, 80+ Gold, Fully Modular</option>
+    <option value="EVGA SuperNOVA 1000 T2">EVGA SuperNOVA 1000 T2 - 1000W, 80+ Titanium, Fully Modular</option>
+    <option value="EVGA SuperNOVA 750 G5">EVGA SuperNOVA 750 G5 - 750W, 80+ Gold, Fully Modular</option>
+    <option value="Seasonic PRIME TX-850">Seasonic PRIME TX-850 - 850W, 80+ Titanium, Fully Modular</option>
+    <option value="Seasonic Focus GX-750">Seasonic Focus GX-750 - 750W, 80+ Gold, Fully Modular</option>
+    <option value="Seasonic PRIME Platinum 1000W">Seasonic PRIME Platinum 1000W - 80+ Platinum, Fully Modular</option>
+    <option value="Cooler Master V850 Gold V2">Cooler Master V850 Gold V2 - 850W, 80+ Gold, Fully Modular</option>
+    <option value="Cooler Master V750 SFX Gold">Cooler Master V750 SFX Gold - 750W, 80+ Gold, SFX, Fully Modular</option>
+    <option value="Be Quiet! Straight Power 11 850W">Be Quiet! Straight Power 11 850W - 80+ Platinum, Fully Modular</option>
+    <option value="Be Quiet! Dark Power Pro 12 1200W">Be Quiet! Dark Power Pro 12 1200W - 80+ Titanium, Fully Modular</option>
+    <option value="Thermaltake Toughpower GF1 850W">Thermaltake Toughpower GF1 850W - 80+ Gold, Fully Modular</option>
+    <option value="Thermaltake Toughpower PF1 ARGB 1050W">Thermaltake Toughpower PF1 ARGB 1050W - 80+ Platinum, Fully Modular, ARGB</option>
+    <option value="ASUS ROG Thor 850W Platinum">ASUS ROG Thor 850W Platinum - 80+ Platinum, Fully Modular, RGB</option>
+    <option value="ASUS ROG Strix 750W Gold">ASUS ROG Strix 750W Gold - 80+ Gold, Fully Modular, RGB</option>
+    <option value="SilverStone SX800-LTI">SilverStone SX800-LTI - 800W, 80+ Titanium, SFX-L, Fully Modular</option>
+    <option value="SilverStone Strider Titanium 1500W">SilverStone Strider Titanium 1500W - 80+ Titanium, Fully Modular</option>
+                    </select>
+                </div>
+
+                <!-- Case -->
+                <div class="form-group">
+                    <label for="case">Case:</label>
+                    <select id="case" name="case" aria-label="Select Case">
+                        <option value="" disabled selected>Select Case</option>
+                        <!-- Add Case options here -->
+						<option value="NZXT H6 FLOW">NZXT H6 FLOW</option>
+    <option value="NZXT H7 FLOW">NZXT H7 FLOW</option>
+    <option value="NZXT H9 FLOW">NZXT H9 FLOW</option>
+    <option value="Corsair 4000D Airflow">Corsair 4000D Airflow</option>
+    <option value="Corsair 5000D Airflow">Corsair 5000D Airflow</option>
+    <option value="Corsair Obsidian Series 1000D">Corsair Obsidian Series 1000D</option>
+    <option value="Corsair Crystal Series 680X RGB">Corsair Crystal Series 680X RGB</option>
+    <option value="Fractal Design Meshify C">Fractal Design Meshify C</option>
+    <option value="Fractal Design Define R5">Fractal Design Define R5</option>
+    <option value="Fractal Design Define 7">Fractal Design Define 7</option>
+    <option value="Cooler Master NR200">Cooler Master NR200</option>
+    <option value="Cooler Master HAF 700 EVO">Cooler Master HAF 700 EVO</option>
+    <option value="Cooler Master Cosmos C700P">Cooler Master Cosmos C700P</option>
+    <option value="Cooler Master MasterBox Q300L">Cooler Master MasterBox Q300L</option>
+    <option value="Cooler Master MasterBox TD500 Mesh">Cooler Master MasterBox TD500 Mesh</option>
+    <option value="Lian Li O11 Dynamic">Lian Li O11 Dynamic</option>
+    <option value="Lian Li Lancool II Mesh">Lian Li Lancool II Mesh</option>
+    <option value="Lian Li PC-011 Air Mini">Lian Li PC-011 Air Mini</option>
+    <option value="Lian Li PC-O11 Dynamic XL">Lian Li PC-O11 Dynamic XL</option>
+    <option value="Phanteks Eclipse P500A">Phanteks Eclipse P500A</option>
+    <option value="Phanteks Enthoo Pro 2">Phanteks Enthoo Pro 2</option>
+    <option value="Phanteks Evolv X">Phanteks Evolv X</option>
+    <option value="Phanteks Eclipse P300A">Phanteks Eclipse P300A</option>
+    <option value="Be Quiet! Dark Base Pro 900">Be Quiet! Dark Base Pro 900</option>
+    <option value="Be Quiet! Pure Base 500DX">Be Quiet! Pure Base 500DX</option>
+    <option value="Antec P120 Crystal">Antec P120 Crystal</option>
+    <option value="Antec DF700 Flux">Antec DF700 Flux</option>
+    <option value="Thermaltake Core P3">Thermaltake Core P3</option>
+    <option value="Thermaltake Level 20 GT">Thermaltake Level 20 GT</option>
+    <option value="Thermaltake View 71">Thermaltake View 71</option>
+    <option value="Thermaltake Level 20 XT">Thermaltake Level 20 XT</option>
+    <option value="SilverStone Fortress FT02">SilverStone Fortress FT02</option>
+    <option value="SilverStone Raven RVZ03">SilverStone Raven RVZ03</option>
+    <option value="Deepcool Matrexx 55 V3">Deepcool Matrexx 55 V3</option>
+    <option value="NZXT Phantom 410">NZXT Phantom 410</option>
+    <option value="NZXT H510 Elite">NZXT H510 Elite</option>
+                    </select>
+                </div>
+
+                <!-- Compatibility Check Button -->
+                <div class="form-group">
+                    <button type="button" id="check-compatibility">Check Compatibility</button>
+                </div>
+		    
+		    <footer style="background-color: #f8f9fa; padding: 20px; text-align: center; font-size: 14px; color: #333;">
+    <p><strong>Warning:</strong> The TDP calculator is not 100% accurate. We advise getting 100-200W more than it suggests for more headroom in the future.</p>
+</footer>
+
+            </form>
+        </section>
+
+        <section class="calculator-section">
+            <h2>Calculate Total TDP</h2>
+            <div id="total-tdp">Total TDP: 0W</div>
+        </section>
+
+        <!-- Compatibility result section -->
+        <section id="compatibility-result" class="hidden">
+            <h2>Compatibility Check Result</h2>
+            <p id="compatibility-message"></p>
+        </section>
+    </main>
+
+    <script>
+        // CPU and GPU TDP values
+        const cpuTDP = {
+            // Add CPU TDP values here
+			'AMD Ryzen 3 1200': 65,
+'AMD Ryzen 3 1300X': 95,
+'AMD Ryzen 5 1400': 65,
+'AMD Ryzen 5 1500X': 95,
+'AMD Ryzen 5 1600': 65,
+'AMD Ryzen 5 1600X': 95,
+'AMD Ryzen 7 1700': 65,
+'AMD Ryzen 7 1700X': 95,
+'AMD Ryzen 7 1800X': 95,
+'AMD Ryzen 3 2200G': 65,
+'AMD Ryzen 3 2300X': 95,
+'AMD Ryzen 5 2400G': 65,
+'AMD Ryzen 5 2500X': 95,
+'AMD Ryzen 5 2600': 65,
+'AMD Ryzen 5 2600X': 95,
+'AMD Ryzen 7 2700': 65,
+'AMD Ryzen 7 2700X': 105,
+'AMD Ryzen 3 3100': 65,
+'AMD Ryzen 3 3300X': 65,
+'AMD Ryzen 5 3400G': 65,
+'AMD Ryzen 5 3600': 65,
+'AMD Ryzen 5 3600X': 95,
+'AMD Ryzen 5 3600XT': 95,
+'AMD Ryzen 7 3700X': 65,
+'AMD Ryzen 7 3800X': 105,
+'AMD Ryzen 7 3800XT': 105,
+'AMD Ryzen 9 3900X': 105,
+'AMD Ryzen 9 3950X': 105,
+'AMD Ryzen 3 4100': 65,
+'AMD Ryzen 5 4600G': 65,
+'AMD Ryzen 5 4650G': 65,
+'AMD Ryzen 7 4700G': 65,
+'AMD Ryzen 7 4800U': 15,
+'AMD Ryzen 3 5100': 65,
+'AMD Ryzen 5 5600': 65,
+'AMD Ryzen 5 5600X': 95,
+'AMD Ryzen 5 5600G': 65,
+'AMD Ryzen 5 5600U': 15,
+'AMD Ryzen 7 5800X': 105,
+'AMD Ryzen 7 5800X3D': 105,
+'AMD Ryzen 9 5900X': 105,
+'AMD Ryzen 9 5950X': 105,
+'AMD Ryzen 9 7950X': 170,
+'AMD Ryzen 9 7900X': 170,
+'AMD Ryzen 7 7700X': 105,
+'AMD Ryzen 5 7600X': 105,
+'AMD Ryzen 9 7950X3D': 170,
+'AMD Ryzen 9 7900X3D': 170,
+'AMD Ryzen 7 7800X3D': 120,
+'AMD Ryzen 7 7700': 65,
+'AMD Ryzen 5 7600': 65,
+'AMD Ryzen 5 7600G': 65,
+'AMD Ryzen 5 7600U': 35,
+'AMD Ryzen 5 7500F': 65,
+'AMD Ryzen 7 7800U': 35,
+'AMD Ryzen 3 3200G': 65,
+'AMD Ryzen 5 3400G': 65,
+'AMD Ryzen 5 3500': 65,
+'AMD Ryzen 5 3500X': 65,
+'AMD Ryzen 7 3700': 65,
+'AMD Ryzen 7 3800': 65,
+'AMD Ryzen 7 3800X': 105,
+'AMD Ryzen 9 3900': 65,
+'AMD Ryzen 9 3900X': 105,
+'AMD Ryzen 9 3950X': 105,
+'AMD Ryzen 5 4600U': 15,
+'AMD Ryzen 5 5600U': 15,
+'AMD Ryzen 7 5800U': 15,
+'AMD Ryzen 5 6600U': 15,
+'AMD Ryzen 7 5800H': 45,
+'AMD Ryzen 7 5800HS': 35,
+'AMD Ryzen 9 5900HS': 35,
+'AMD Ryzen 9 5900HX': 45,
+'AMD Ryzen 5 5600G': 65,
+'AMD Ryzen 7 5700G': 65,
+'AMD Ryzen 9 5900HX': 45,
+'AMD Ryzen 5 5600U': 15,
+'AMD Ryzen 5 5600G': 65,
+'AMD Ryzen 5 5600X': 95,
+'AMD Ryzen 5 5600H': 45,
+'AMD Ryzen 7 5700G': 65,
+'AMD Ryzen 7 5800H': 45,
+'AMD Ryzen 7 5800HS': 35,
+'AMD Ryzen 7 5800U': 15,
+'AMD Ryzen 7 5800X': 105,
+'AMD Ryzen 9 5900HX': 45,
+'AMD Ryzen 9 5950X': 105,
+'AMD Ryzen 9 5900HS': 35,
+'AMD Ryzen 9 5950X': 105,
+'AMD Ryzen 9 7950X': 170,
+'AMD Ryzen 9 7900X': 170,
+'AMD Ryzen 9 7950X3D': 170,
+'AMD Ryzen 9 7900X3D': 170,
+'AMD Ryzen 7 7800X3D': 120,
+'AMD Ryzen 5 7600': 65,
+'AMD Ryzen 5 7600G': 65,
+'AMD Ryzen 5 7600X': 105,
+'AMD Ryzen 5 7600U': 35,
+'AMD Ryzen 7 7800U': 35,
+'AMD Ryzen 5 7500F': 65,
+
+'Intel Core i3-8100': 65,
+'Intel Core i3-8300': 62,
+'Intel Core i3-9100': 65,
+'Intel Core i3-9300': 62,
+'Intel Core i5-8400': 65,
+'Intel Core i5-8500': 65,
+'Intel Core i5-8600K': 95,
+'Intel Core i5-9600K': 95,
+'Intel Core i7-8700': 65,
+'Intel Core i7-8700K': 95,
+'Intel Core i7-9700K': 95,
+'Intel Core i9-9900K': 95,
+'Intel Core i9-9900KF': 95,
+'Intel Core i3-10100': 65,
+'Intel Core i3-10300': 65,
+'Intel Core i5-10400': 65,
+'Intel Core i5-10600': 65,
+'Intel Core i5-10600K': 125,
+'Intel Core i7-10700': 65,
+'Intel Core i7-10700K': 125,
+'Intel Core i9-10900K': 125,
+'Intel Core i9-10900KF': 125,
+'Intel Core i5-11400': 65,
+'Intel Core i5-11600K': 125,
+'Intel Core i7-11700': 65,
+'Intel Core i7-11700K': 125,
+'Intel Core i9-11900K': 125,
+'Intel Core i9-11900KF': 125,
+'Intel Core i3-12100': 60,
+'Intel Core i5-12400': 65,
+'Intel Core i5-12600K': 125,
+'Intel Core i7-12700': 65,
+'Intel Core i7-12700K': 125,
+'Intel Core i9-12900K': 125,
+'Intel Core i9-12900KF': 125,
+'Intel Core i5-13400': 65,
+'Intel Core i5-13600K': 125,
+'Intel Core i7-13700': 65,
+'Intel Core i7-13700K': 125,
+'Intel Core i9-13900K': 125,
+'Intel Core i9-13900KF': 125,
+'Intel Core i9-13900': 65,
+        };
+
+        const gpuTDP = {
+            // Add GPU TDP values here
+			'AMD Radeon RX 6600': 132,
+				'AMD Radeon RX 6600 XT': 160,
+				'AMD Radeon RX 6650 XT': 180,
+				'AMD Radeon RX 6700 XT': 230,
+				'AMD Radeon RX 6750 XT': 250,
+				'AMD Radeon RX 6800': 250,
+				'AMD Radeon RX 6800 XT': 300,
+				'AMD Radeon RX 6900 XT': 300,
+				'AMD Radeon RX 6950 XT': 335,
+				'AMD Radeon RX 7600': 165,
+				'AMD Radeon RX 7700 XT': 245,
+				'AMD Radeon RX 7800 XT': 263,
+				'AMD Radeon RX 7900 XT': 315,
+				'AMD Radeon RX 7900 XTX': 355,
+				'AMD Radeon RX 7900 GRE': 330,
+				'NVIDIA GeForce RTX 3060': 170,
+				'NVIDIA GeForce RTX 3060 Ti': 200,
+				'NVIDIA GeForce RTX 3070': 220,
+				'NVIDIA GeForce RTX 3070 Ti': 290,
+				'NVIDIA GeForce RTX 3080': 320,
+				'NVIDIA GeForce RTX 3080 Ti': 350,
+				'NVIDIA GeForce RTX 3090': 350,
+				'NVIDIA GeForce RTX 4060': 115,
+				'NVIDIA GeForce RTX 4060 Ti': 160,
+				'NVIDIA GeForce RTX 4070': 200,
+				'NVIDIA GeForce RTX 4070 Ti': 285,
+				'NVIDIA GeForce RTX 4080': 320,
+				'NVIDIA GeForce RTX 4090': 450
+        };
+
+        // Update TDP values
+        document.querySelectorAll('select').forEach(select => {
+            select.addEventListener('change', updateTDP);
+        });
+
+        function updateTDP() {
+            let totalTDP = 0;
+
+            const cpu = document.querySelector('#cpu').value;
+            const gpu = document.querySelector('#gpu').value;
+
+            if (cpu) totalTDP += cpuTDP[cpu] || 0;
+            if (gpu) totalTDP += gpuTDP[gpu] || 0;
+
+            document.querySelector('#total-tdp').textContent = `Total TDP: ${totalTDP}W`;
+        }
+
+        // Toggle dark mode
+        const toggleDarkMode = document.getElementById('dark-mode-toggle');
+        toggleDarkMode.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        // Compatibility check function
+        document.getElementById('check-compatibility').addEventListener('click', () => {
+            const cpu = document.getElementById('cpu').value;
+            const motherboard = document.getElementById('motherboard').value;
+            const resultSection = document.getElementById('compatibility-result');
+            const message = document.getElementById('compatibility-message');
+
+            const cpuSocket = document.querySelector('#cpu option:checked').getAttribute('data-socket');
+            const motherboardSocket = document.querySelector('#motherboard option:checked').getAttribute('data-socket');
+
+            // Compatibility logic (based on socket group)
+            let compatible = true;
+            let incompatibleParts = [];
+
+            // Check if CPU and Motherboard are in the same socket group
+            if (cpuSocket !== motherboardSocket) {
+                compatible = false;
+                incompatibleParts.push(`CPU (${cpu}) with Motherboard (${motherboard})`);
+            }
+
+            if (compatible) {
+                message.textContent = 'All selected components are compatible.';
+            } else {
+                message.textContent = `The following components are not compatible: ${incompatibleParts.join(', ')}.`;
+            }
+
+            resultSection.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
