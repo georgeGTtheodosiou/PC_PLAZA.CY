@@ -3,13 +3,17 @@ body {
     font-family: 'Poppins', sans-serif; /* Modern font for a clean look */
     margin: 0;
     padding: 0;
-    background-color: #f2f4f8; /* Soft background color for a subtle contrast */
-    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft gradient background */
+    background: linear-gradient(135deg, #e0eafc, #cfdef3), 
+                url('https://benbrosltd.com.ng/wp-content/uploads/2017/06/16.jpg'); /* Add background image with gradient */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
     color: #333; /* Dark grey text for readability */
     line-height: 1.6; /* Improved line height for better readability */
     overflow-x: hidden; /* Prevent horizontal scroll */
     transition: background-color 0.3s ease; /* Smooth transition for dark mode */
 }
+
 
 /* Dark mode styles */
 body.dark-mode {
