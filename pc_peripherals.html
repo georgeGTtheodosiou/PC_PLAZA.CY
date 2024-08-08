@@ -262,11 +262,13 @@
         </section>
     </main>
     <aside class="cart" id="cart">
-        <h2>Shopping Cart</h2>
-        <ul id="cart-items"></ul>
-        <button id="clear-cart">Clear Cart</button>
-        <button id="checkout">Checkout</button>
-    </aside>
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="cart-total">0.00</span></p> <!-- Added this line -->
+    <button id="clear-cart">Clear Cart</button>
+    <button id="checkout">Checkout</button>
+</aside>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
